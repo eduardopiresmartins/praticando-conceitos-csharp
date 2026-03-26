@@ -14,7 +14,30 @@ Este projeto contem a resolucao dos exercicios praticos do modulo, implementados
 
 ## Como executar
 
-1. Abra um terminal na pasta do projeto `C#/`.
+Voce pode executar de 2 formas.
+
+### Opcao 1 (recomendada): rodar da raiz do repositorio
+
+1. Abra o terminal na pasta raiz:
+
+```bash
+cd "/Users/eduardopiresmartins/Documents/Praticando Conceitos C#"
+```
+
+2. Execute informando o projeto:
+
+```bash
+dotnet run --project "./C#/C#.csproj"
+```
+
+### Opcao 2: entrar na pasta do projeto e rodar
+
+1. Entre na pasta do projeto:
+
+```bash
+cd "/Users/eduardopiresmartins/Documents/Praticando Conceitos C#/C#"
+```
+
 2. Execute:
 
 ```bash
@@ -22,6 +45,25 @@ dotnet run
 ```
 
 3. Escolha uma opcao no menu para testar cada exercicio.
+
+## Solucao de problemas
+
+Se aparecer a mensagem:
+
+Nao foi possivel localizar um projeto para executar...
+
+isso significa que voce esta na pasta errada. Use um destes comandos:
+
+```bash
+dotnet run --project "./C#/C#.csproj"
+```
+
+ou
+
+```bash
+cd "/Users/eduardopiresmartins/Documents/Praticando Conceitos C#/C#"
+dotnet run
+```
 
 ## Exercicios implementados
 

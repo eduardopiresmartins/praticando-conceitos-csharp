@@ -1,58 +1,74 @@
 # Desafio Pratico - Conceitos Basicos em C#
 
-Este projeto contem a resolucao dos exercicios praticos do modulo, implementados em um aplicativo de console com menu interativo.
+Aplicacao de console com menu interativo para praticar conceitos basicos da linguagem C#.
 
-## Estrutura
+## Objetivo
+
+Consolidar fundamentos de entrada e saida de dados, manipulacao de strings, operacoes numericas, validacao com regex e formatacao de data/hora.
+
+## Estrutura do projeto
 
 - Solucao: `Praticando Conceitos C#.sln`
-- Projeto: `C#/C#.csproj`
-- Codigo principal: `C#/Program.cs`
+- Projeto principal: `C#/C#.csproj`
+- Codigo-fonte: `C#/Program.cs`
 
 ## Requisitos
 
-- .NET 8 SDK instalado
+- .NET 8 SDK
 
-## Como executar
+## Execucao
 
-Voce pode executar de 2 formas.
+### Opcao 1 (recomendada): executar pela raiz do repositorio
 
-### Opcao 1 (recomendada): rodar da raiz do repositorio
-
-1. Abra o terminal na pasta raiz:
-
-```bash
-cd "/Users/eduardopiresmartins/Documents/Praticando Conceitos C#"
-```
-
-2. Execute informando o projeto:
+Na raiz do repositorio (onde esta o arquivo `.sln`), rode:
 
 ```bash
 dotnet run --project "./C#/C#.csproj"
 ```
 
-### Opcao 2: entrar na pasta do projeto e rodar
-
-1. Entre na pasta do projeto:
+### Opcao 2: executar dentro da pasta do projeto
 
 ```bash
-cd "/Users/eduardopiresmartins/Documents/Praticando Conceitos C#/C#"
-```
-
-2. Execute:
-
-```bash
+cd "./C#"
 dotnet run
 ```
 
-3. Escolha uma opcao no menu para testar cada exercicio.
+## Funcionalidades implementadas
+
+1. Boas-vindas personalizada com nome informado pelo usuario.
+2. Concatenacao de nome e sobrenome para exibicao do nome completo.
+3. Operacoes com dois valores `double`:
+   - Soma
+   - Subtracao
+   - Multiplicacao
+   - Divisao (com tratamento para divisao por zero)
+   - Media
+4. Contagem de caracteres em palavra/frase:
+   - Total com espacos
+   - Total sem espacos
+5. Validacao de placa brasileira no padrao antigo (ate 2018):
+   - 3 letras e 4 numeros (exemplo: `ABC1234`)
+6. Exibicao da data/hora atual em formatos diferentes:
+   - Formato completo
+   - Apenas data (`dd/MM/yyyy`)
+   - Apenas hora (`HH:mm:ss`)
+   - Data com mes por extenso
+
+## Compilacao
+
+Para validar a compilacao do projeto:
+
+```bash
+dotnet build "./C#/C#.csproj"
+```
 
 ## Solucao de problemas
 
-Se aparecer a mensagem:
+Se aparecer a mensagem abaixo:
 
-Nao foi possivel localizar um projeto para executar...
+`Nao foi possivel localizar um projeto para executar...`
 
-isso significa que voce esta na pasta errada. Use um destes comandos:
+isso indica que o comando foi executado fora da pasta esperada. Use uma destas alternativas:
 
 ```bash
 dotnet run --project "./C#/C#.csproj"
@@ -61,39 +77,10 @@ dotnet run --project "./C#/C#.csproj"
 ou
 
 ```bash
-cd "/Users/eduardopiresmartins/Documents/Praticando Conceitos C#/C#"
+cd "./C#"
 dotnet run
 ```
 
-## Exercicios implementados
+## Observacao tecnica
 
-1. Boas-vindas personalizada com nome digitado pelo usuario.
-2. Concatenacao de nome e sobrenome para exibir nome completo.
-3. Operacoes com dois valores `double`:
-   - Soma
-   - Subtracao
-   - Multiplicacao
-   - Divisao (com validacao para divisao por zero)
-   - Media
-4. Contagem de caracteres de palavra/frase:
-   - Total com espacos
-   - Total sem espacos
-5. Validacao de placa brasileira antiga (padrao ate 2018):
-   - 3 letras + 4 numeros (exemplo: `ABC1234`)
-6. Exibicao da data atual em formatos diferentes:
-   - Formato completo
-   - Apenas data (`dd/MM/yyyy`)
-   - Apenas hora (`HH:mm:ss`)
-   - Data com mes por extenso
-
-## Compilacao
-
-Para validar compilacao:
-
-```bash
-dotnet build
-```
-
-## Observacao
-
-O projeto foi ajustado para aplicativo de console (`OutputType: Exe`) para suportar interacao via `Console.ReadLine()`.
+O projeto esta configurado como aplicativo de console (`OutputType: Exe`) para permitir interacao com `Console.ReadLine()`.
